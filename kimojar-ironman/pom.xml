@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.kimojar</groupId>
+		<artifactId>kimojar-software</artifactId>
+		<version>22.11.15</version>
+	</parent>
+	<artifactId>kimojar-ironman</artifactId>
+	<version>22.12.09</version>
+	<packaging>pom</packaging>
+	<name>com.kimojar.ironman</name>
+	<description>I am iron man!</description>
+
+	<properties>
+		<jarvis.version>22.12.09</jarvis.version>
+	</properties>
+
+	<url>https://yuque.com/mongoosej</url>
+	<organization>
+		<name>MongooseJ</name>
+		<url>https://yuque.com/mongoosej</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>KiMoJar</id>
+			<name>KiMoJar</name>
+			<email>mongoosej@foxmail.com</email>
+		</developer>
+	</developers>
+
+	<modules>
+		<module>kimojar-ironman-jarvis</module>
+		<module>kimojar-ironman-jarvis-vision</module>
+		<module>kimojar-ironman-mark</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.kimojar.ironman</groupId>
+				<artifactId>kimojar-ironman-jarvis</artifactId>
+				<version>${jarvis.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

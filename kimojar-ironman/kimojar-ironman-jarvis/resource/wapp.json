@@ -1,0 +1,1618 @@
+{
+	"API": [
+		{
+			"appid": null,
+			"name": "Apifox",
+			"description": "",
+			"directory": "",
+			"version": "",
+			"category": "API",
+			"executePath": "",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "https://www.apifox.cn/",
+			"download": "",
+			"manualOnline": "https://www.apifox.cn/help/",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "Apifox",
+				"action": "start ",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "goto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "cfg",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dl",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "exe",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "gh",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "gt",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mn",
+						"action": "start %ApifoxManualOnline%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mno",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "uins",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %ApifoxWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "Photoshop",
+			"description": "",
+			"directory": "D:\\Program Files\\Adobe\\Adobe Photoshop 2022",
+			"version": "23.5.2 20220927.r.751 2ff5989  x64",
+			"category": "API",
+			"executePath": "D:\\Program Files\\Adobe\\Adobe Photoshop 2022\\Photoshop.exe",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "https://www.adobe.com/cn/",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "ps",
+				"action": "start %PhotoshopExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open Photoshop\necho [dir]\topen Photoshop directory\necho [vn]\topen Photoshop version tip\necho [ws]\topen Photoshop website\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %PhotoshopDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%PhotoshopVersion%\",64,\"Photoshop Version\")(window.close)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %PhotoshopWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"Browser": [
+		{
+			"appid": null,
+			"name": "Chrome",
+			"description": "",
+			"directory": "C:\\Program Files\\Google\\Chrome\\Application",
+			"version": "108.0.5359.125",
+			"category": "Browser",
+			"executePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+			"uninstallPath": "",
+			"dataPath": "E:\\Downloads\\BrowerDownload",
+			"configPath": "",
+			"website": "https://www.google.cn/chrome/",
+			"download": "https://www.google.cn/chrome/thank-you.html",
+			"manualOnline": "https://www.google.cn/intl/zh-CN/chrome/browser-features/",
+			"manualOffline": "https://www.google.cn/intl/zh-CN/chrome/tips/",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "c",
+				"action": "start /max %ChromeExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open Chrome\necho [data]\topen browser download directory\necho [dir]\topen Chrome directory\necho [dl]\topen Chrome download site\necho [mn]\topen Chrome online manual\necho [vn]\topen Chrome version tip\necho [ws]\topen Chrome website\necho [y]\topen Chrome yuque\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "explorer %ChromeDataPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %ChromeDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dl",
+						"action": "start %ChromeDownload%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mn",
+						"action": "start %ChromeManualOnline%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%ChromeVersion%\",64,\"Chrome Version\")(window.close)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %ChromeWebsite%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "y",
+						"action": "start https://www.yuque.com/mongoosej/blog/chrome",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "Edge",
+			"description": "",
+			"directory": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application",
+			"version": "108.0.1462.54",
+			"category": "Browser",
+			"executePath": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+			"uninstallPath": "",
+			"dataPath": "E:\\Downloads\\BrowerDownload",
+			"configPath": "",
+			"website": "",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "edge",
+				"action": "start /max %EdgeExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open Edge\necho [data]\topen browser download directory\necho [dir]\topen Chrome directory\necho [vn]\topen Chrome version tip\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "explorer %EdgeDataPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %EdgeDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%EdgeVersion%\",64,\"Edge Version\")(window.close)",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"Clip": [ ],
+	"DBTool": [
+		{
+			"appid": null,
+			"name": "DbVisualizer",
+			"description": "",
+			"directory": "D:\\Program Files (x86)\\dbvis_windows-x64_9_2_10\\DbVisualizer",
+			"version": "9.2.10",
+			"category": "DBTool",
+			"executePath": "D:\\Program Files (x86)\\dbvis_windows-x64_9_2_10\\DbVisualizer\\dbvis.exe",
+			"uninstallPath": "",
+			"dataPath": "E:\\UserTemp\\DbVisualizer",
+			"configPath": "D:\\Program Files (x86)\\dbvis_windows-x64_9_2_10\\DbVisualizer\\.install4j",
+			"website": "https://www.dbvis.com/",
+			"download": "https://www.dbvis.com/download/",
+			"manualOnline": "https://www.dbvis.com/features/",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "dbvis",
+				"action": "start %DbVisualizerExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open DbVisualizer\necho [cfg]\topen pref_jre.cfg or dbvis.vmoptions by notepad\necho [data]\topen DbVisualizer data directory\necho [dir]\topen DbVisualizer directory\necho [dl]\topen DbVisualizer download site\necho [vn]\topen DbVisualizer version tip\necho [ws]\topen DbVisualizer site\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "cfg",
+						"action": "if exist %DbVisualizerDirectory%\\.install4j\\pref_jre.cfg (start notepad %DbVisualizerDirectory%\\.install4j\\pref_jre.cfg) else (start notepad %DbVisualizerDirectory%\\dbvis.vmoptions)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "explorer %DbVisualizerDataPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %DbVisualizerDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dl",
+						"action": "start %DbVisualizerDownload%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%DbVisualizerVersion%\",64,\"DbVisualizer Version\")(window.close)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %DbVisualizerWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": "D:\\Program Files (x86)\\dbvis_windows-x64_9_2_10\\DbVisualizer\\.install4j\\i4j_extf_3_1bd0g0g_1he97b5.png"
+		}
+	],
+	"IDE": [
+		{
+			"appid": null,
+			"name": "Eclipse",
+			"description": "",
+			"directory": "D:\\Program Files (x86)\\eclipse\\2022-06(4.24)",
+			"version": "4.24",
+			"category": "IDE",
+			"executePath": "D:\\Program Files (x86)\\eclipse\\2022-06(4.24)\\eclipse.exe",
+			"uninstallPath": "D:\\Program Files (x86)\\eclipse\\2020-06(4.16)\\eclipse.exe",
+			"dataPath": "F:\\WorkSpace",
+			"configPath": "",
+			"website": "https://www.eclipse.org/",
+			"download": "https://www.eclipse.org/downloads/packages/release",
+			"manualOnline": "https://help.eclipse.org/latest/index.jsp",
+			"manualOffline": "https://www.yuque.com/mongoosej/blog/eclipse",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "e",
+				"action": "start /max %EclipseExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open Eclipse\necho [blade]\topen Eclipse with blade work  space\necho [coconut]\topen Eclipse with coconut work  space\necho [data]\topen work space directory\necho [dir]\topen Eclipse directory\necho [dl]\topen Eclipse download site\necho [wcs3]\topen Eclipse with wcs3 work  space\necho [wcs4]\topen Eclipse with wcs4 work  space\necho [ws]\topen Eclipse website\necho [y]\topen Eclipse yuque\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "blade",
+						"action": "start /max %EclipseExecutePath% -data F:\\WorkSpace\\EclipseBladeProjects",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "coconut",
+						"action": "start /max %EclipseExecutePath% -data F:\\WorkSpace\\EclipseCoconutProjects",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "explorer F:\\WorkSpace",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %EclipseDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dl",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "wcs3",
+						"action": "start /max %EclipseUninstallPath% -data F:\\WorkSpace\\EclipseWCS3Projects",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "wcs4",
+						"action": "start /max %EclipseUninstallPath% -data F:\\WorkSpace\\EclipseWCS4Projects",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "echo...",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "y",
+						"action": "start https://www.yuque.com/mongoosej/blog/eclipse",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"InstantMessaging": [
+		{
+			"appid": null,
+			"name": "WeChat",
+			"description": "",
+			"directory": "D:\\Program Files (x86)\\Tencent\\WeChat",
+			"version": "3.8.1.26",
+			"category": "InstantMessaging",
+			"executePath": "D:\\Program Files (x86)\\Tencent\\WeChat\\WeChat.exe",
+			"uninstallPath": "D:\\Program Files (x86)\\Tencent\\WeChat\\Uninstall.exe",
+			"dataPath": "E:\\UserTemp\\WeChat\\WeChat Files\\kjlenovo\\FileStorage\\File",
+			"configPath": "",
+			"website": "https://weixin.qq.com/",
+			"download": "https://pc.weixin.qq.com/",
+			"manualOnline": "https://developers.weixin.qq.com/doc/",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "wechat",
+				"action": "start %WeChatExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open WeChat\necho [data]\topen browser download directory\necho [dir]\topen WeChat directory\necho [dl]\topen WeChat download site\necho [mn]\topen WeChat online manual\necho [uins]\tuninstall WeChat\necho [vn]\topen WeChat version tip\necho [ws]\topen WeChat website\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "start explorer %WeChatDataPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "start explorer %WeChatDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dl",
+						"action": "start %WeChatDownload%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mn",
+						"action": "start %WeChatManualOnline%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "uins",
+						"action": "start %WeChatUninstallPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%WeChatVersion%\",64,\"WeChat Version\")(window.close)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %WeChatWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"KSEC": [
+		{
+			"appid": null,
+			"name": "DashO",
+			"description": "",
+			"directory": "D:\\Program Files\\PreEmptive Protection - DashO 9.1",
+			"version": "9.1.1(7564)",
+			"category": "KSEC",
+			"executePath": "D:\\Program Files\\PreEmptive Protection - DashO 9.1\\PreEmptive Protection - DashO 9.1.exe",
+			"uninstallPath": "D:\\Program Files\\PreEmptive Protection - DashO 9.1\\unins000.exe",
+			"dataPath": "F:\\ZC\\iPublish",
+			"configPath": "D:\\Program Files\\PreEmptive Protection - DashO 9.1\\wcstemplete",
+			"website": "https://www.preemptive.com/",
+			"download": "https://www.preemptive.com/products/dotfuscator/downloads/",
+			"manualOnline": "https://www.preemptive.com/dasho/pro/userguide/en/index.html",
+			"manualOffline": "D:/Program Files/PreEmptive Protection - DashO 9.1/app/docs/index.html",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "dash",
+				"action": "start D\":\\Program Files\\PreEmptive Protection - DashO 9.1\\PreEmptive Protection - DashO 9.1.exe\"",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open DashO\necho [cfg]\topen DashO config directory wcstemplete\necho [data]\topen DashO data directory iPublish\necho [dir]\topen DashO directory\necho [dl]\topen DashO download site\necho [mn]\topen DashO online manual\necho [mno]\topen DashO online manual\necho [uins]\topen DashO uninstall execute\necho [vn]\topen DashO version tip\necho [ws]\topen DashO website\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "cfg",
+						"action": "explorer %DashOConfigPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "explorer %DashODataPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %DashODirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dl",
+						"action": "start %DashODownload%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mn",
+						"action": "start %DashOManualOnline%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mno",
+						"action": "start %DashOManualOffline%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "sn",
+						"action": "echo.\necho Licensed to: Zhangjun Chen\necho S/N: 194897-391-81194A30-FD9A35E2-021F3A99-4EA1699A\npause",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "uins",
+						"action": "start %DashOUninstallPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%DashOVersion%\",64,\"DashO Version\")(window.close)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %DashOWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "Designer",
+			"description": "",
+			"directory": "D:\\TWCS\\Designer",
+			"version": "com.ksec.wcs.designer-3.0.0-202207050736",
+			"category": "KSEC",
+			"executePath": "D:\\TWCS\\Designer\\startup.bat",
+			"uninstallPath": "",
+			"dataPath": "D:\\TWCS\\Designer\\data",
+			"configPath": "",
+			"website": "",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "dsn",
+				"action": "%DesignerDirectory:~0,2%\ncd %DesignerDirectory%\nstartup.bat",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open Designer\necho [data][linenum]\topen Designer specific project data directory if exist, otherwise open Designer data directory\necho [dir]\topen Designer directory\necho [log]\topen Designer log directory\necho [vn]\topen Designer version tip\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "bat",
+						"action": "start /MAX notepad %DesignerExecutePath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "(if exist %DesignerDataPath%\\L%PARA2% (explorer %DesignerDataPath%\\L%PARA2%) else (explorer %DesignerDataPath%))",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %DesignerDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "log",
+						"action": "start %Notepad++ExecutePath% %DesignerDirectory%\\log\\log.log",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%DesignerVersion%\",64,\"Designer Version\")(window.close)",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "Installation",
+			"description": "",
+			"directory": "D:\\TWCS\\Installation",
+			"version": "com.ksec.wcs.installation-3.0.0-202103190558",
+			"category": "KSEC",
+			"executePath": "D:\\TWCS\\Installation\\startup.bat",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "D:\\TWCS\\Installation\\projectfile",
+			"website": "",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "ins",
+				"action": "%InstallationDirectory:~0,2%\ncd %InstallationDirectory%\nstartup.bat",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open Installation\necho [cfg]\topen Installation projectfile directory\necho [dir]\topen Installation directory\necho [vn]\topen Installation version tip\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "bat",
+						"action": "start /MAX notepad %InstallationExecutePath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "cfg",
+						"action": "explorer %InstallationConfigPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %InstallationDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%InstallationVersion%\",64,\"Installation Version\")(window.close)",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "KDoc",
+			"description": "",
+			"directory": "F:\\KSEC",
+			"version": "",
+			"category": "KSEC",
+			"executePath": "",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "k",
+				"action": "explorer %KDocDirectory%",
+				"childCmds": [
+					{
+						"cmd": "250",
+						"action": "start http://172.16.194.250/",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open KSEC directory\necho [dir]\topen KSEC directory\necho [doc]\topen KSEC doc directory\necho [ptc]\topen KSEC protocol directory\necho [250]\topen cute file explorer on 172.16.194.250\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %KDocDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "doc",
+						"action": "explorer %KDocDirectory%\\Doc",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ptc",
+						"action": "explorer %KDocDirectory%\\Protocol",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "todo",
+						"action": "echo.\necho \"帮助工具，启用\\停用WCS多语言功能\"\npause",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "Pro",
+			"description": "",
+			"directory": "D:\\TWCS\\PRO",
+			"version": "",
+			"category": "KSEC",
+			"executePath": "",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "pro",
+				"action": "explorer %ProDirectory%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo .\necho []\tno para will open wcs project installation directory\necho [bak]\topen wcs backup directory if exist, otherwise open wcs project installation directory\necho [dir\\log\\mq\\web\\core\\monitor\\interface]['linenum']\topen wcs specific project directory if exist, otherwise open wcs project installation directory\necho [manager\\client]['linenum']\topen wcs manager\\client startup.bat\necho [ws]\topen timms site\necho [y]\topen yuque project list table\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "bak",
+						"action": "(if exist %ProDirectory%\\Backup (start /max explorer %ProDirectory%\\Backup) else (start /max explorer %ProDirectory%))",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "client",
+						"action": "if exist %ProDirectory%\\L%PARA2%\\TIMMS3\\MonitorClient (\n%ProDirectory:~0,2%\ncd %ProDirectory%\\L%PARA2%\\TIMMS3\\MonitorClient\nstartup.bat\n) else (\nexplorer %ProDirectory%\n)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "core",
+						"action": "(if exist %ProDirectory%\\L%PARA2%\\TIMMS3\\ControlNodeCore (explorer %ProDirectory%\\L%PARA2%\\TIMMS3\\ControlNodeCore) else (explorer %ProDirectory%))",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "(if exist %ProDirectory%\\L%PARA2%\\TIMMS3 ( explorer %ProDirectory%\\L%PARA2%\\TIMMS3) else (explorer %ProDirectory%))",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "interface",
+						"action": "(if exist %ProDirectory%\\L%PARA2%\\TIMMS3\\ControlNodeInterface (explorer %ProDirectory%\\L%PARA2%\\TIMMS3\\ControlNodeInterface) else (explorer %ProDirectory%))",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "log",
+						"action": "(if exist %ProDirectory%\\L%PARA2%\\log\\L%PARA2%\\TWCS3 (explorer %ProDirectory%\\L%PARA2%\\log\\L%PARA2%\\TWCS3) else (explorer %ProDirectory%))",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "manager",
+						"action": "if exist %ProDirectory%\\L%PARA2%\\TIMMS3\\WCSServiceManager (\n%ProDirectory:~0,2%\ncd %ProDirectory%\\L%PARA2%\\TIMMS3\\WCSServiceManager\nstartup.bat\n) else (\nexplorer %ProDirectory%\n)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "monitor",
+						"action": "(if exist %ProDirectory%\\L%PARA2%\\TIMMS3\\ControlNodeMonitor (explorer %ProDirectory%\\L%PARA2%\\TIMMS3\\ControlNodeMonitor) else (explorer %ProDirectory%))",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mq",
+						"action": "(if exist %ProDirectory%\\L%PARA2%\\TIMMS3\\ActiveMQ (explorer %ProDirectory%\\L%PARA2%\\TIMMS3\\ActiveMQ) else (explorer %ProDirectory%))",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "web",
+						"action": "(if exist %ProDirectory%\\L%PARA2%\\TIMMS3\\ControlNodeWeb\\TomCat\\webapps\\wcs3\\WEB-INF (explorer %ProDirectory%\\L%PARA2%\\TIMMS3\\ControlNodeWeb\\TomCat\\webapps\\wcs3\\WEB-INF) else (explorer %ProDirectory%))",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start http://www.kc-timms.com/index.html#/login?redirect=%2Fdashboard",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "y",
+						"action": "start https://ksec-twcs.yuque.com/ksec.twcs.cd/project/overview",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "RTC",
+			"description": "",
+			"directory": "F:\\WorkSpace\\EclipseRTCProjects",
+			"version": "",
+			"category": "KSEC",
+			"executePath": "",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "",
+			"download": "",
+			"manualOnline": "https://ksec-twcs.yuque.com/ksec.twcs.cd/teaminfo/bf4n7y",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "rtc",
+				"action": "explorer %RTCDirectory%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo .\necho []\tno para will open RTC work sapce directory\necho [data]['linenum']\topen 'linenum' specified project wcs data RTC directory if exist otherwrise open RTC work sapce directory\necho [dir]\tno para will open RTC work sapce directory\necho [doc]['linenum']\topen 'linenum' specified project document RTC directory if exist otherwrise open RTC work sapce directory\necho [mn]\topen RTC manual on yuque\necho [y]\topen RTC manual on yuque\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "if exist %RTCDirectory%\\L%PARA2%#DB#WCS3 (explorer %RTCDirectory%\\L%PARA2%#DB#WCS3) else (explorer %RTCDirectory%)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %RTCDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "doc",
+						"action": "if exist %RTCDirectory%\\L%PARA2%#DOC (explorer %RTCDirectory%\\L%PARA2%#DOC) else (explorer %RTCDirectory%)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mn",
+						"action": "start https://ksec-twcs.yuque.com/ksec.twcs.cd/teaminfo/bf4n7y",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "y",
+						"action": "start https://ksec-twcs.yuque.com/ksec.twcs.cd/teaminfo/bf4n7y",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"KSP": [
+		{
+			"appid": null,
+			"name": "Ironman",
+			"description": "",
+			"directory": "D:\\KSP\\com.kimojar.ironman.jarvis",
+			"version": "",
+			"category": "KSP",
+			"executePath": "D:\\KSP\\com.kimojar.ironman.jarvis\\startup.bat",
+			"uninstallPath": "",
+			"dataPath": "D:\\KSP\\com.kimojar.ironman.jarvis\\log",
+			"configPath": "D:\\KSP\\com.kimojar.ironman.jarvis\\resource\\wapp.json",
+			"website": "https:\\\\yuque.com\\mongoosej",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "https://github.com/mongoosejar/Jarvis",
+			"gitee": "",
+			"command": {
+				"cmd": "im",
+				"action": "%IronmanDirectory:~0,2%\ncd %IronmanDirectory%\nstartup.bat",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo .\necho []\tno para will open ironman\necho [bat]\topen jvs command by notepadd++\necho [cfg]\topen wapp.json by notepadd++\necho [dir]\topen ironman directory\necho [gh]\topen ironman github\necho [ws]\topen ironman yuque\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "bat",
+						"action": "start notepad %IronmanExecutePath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "cfg",
+						"action": "start /max %Notepad++ExecutePath% %IronmanConfigPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %IronmanDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "gh",
+						"action": "start %IronmanGithub%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "jvs",
+						"action": "start %Notepad++ExecutePath% %userprofile%\\jvs.bat",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %IronmanWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "KHelper",
+			"description": "",
+			"directory": "D:\\KSP\\com.kimojar.tool.wcs",
+			"version": "",
+			"category": "KSP",
+			"executePath": "D:\\KSP\\com.kimojar.tool.wcs\\startup.bat",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "hlp",
+				"action": "%KHelperDirectory:~0,2%\ncd %KHelperDirectory%\nstartup.bat",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo .\necho []\tno para will open KHelper\necho [dir]\topen KHelper directory\necho [log]\topen KHelper log directory\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %KHelperDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "log",
+						"action": "start %Notepad++ExecutePath% %KHelperDirectory%\\log\\wcshelper.log",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"Linux": [
+		{
+			"appid": null,
+			"name": "Xshell",
+			"description": "",
+			"directory": "D:\\Program Files (x86)\\NetSarang\\Xshell 7",
+			"version": "7.0.0011(Build 0063)",
+			"category": "Linux",
+			"executePath": "D:\\Program Files (x86)\\NetSarang\\Xshell 7\\Xshell.exe",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "https://www.xshell.com/zh/xshell/",
+			"download": "https://www.xshell.com/zh/all-downloads/",
+			"manualOnline": "https://netsarang.atlassian.net/wiki/spaces/ENSUP/overview?desktop=true",
+			"manualOffline": "D:\\Program Files (x86)\\NetSarang\\Xshell 7\\Xshell7_en.pdf",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "xshell",
+				"action": "start %XshellExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open Xshell\necho [dir]\topen Xshell directory\necho [dl]\topen Xshell download site\necho [mn]\topen Xshell online manual\necho [mno]\topen Xshell offline manual\necho [vn]\topen Xshell version tip\necho [ws]\topen Xshell website\necho [y]\topen Xshell yuque\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %XshellDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dl",
+						"action": "start %XshellDownload%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mn",
+						"action": "start %XshellManualOnline%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mno",
+						"action": "if exist %ChromeExecutePath% (start %ChromeExecutePath% %XshellManualOffline%) else (start %XshellManualOffline%)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%XshellVersion%\",64,\"Xshell Version\")(window.close)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %XshellWebsite%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "y",
+						"action": "start https://www.yuque.com/mongoosej/blog/xshell",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"Meeting": [
+		{
+			"appid": null,
+			"name": "WeMeet",
+			"description": "",
+			"directory": "D:\\Program Files (x86)\\Tencent\\WeMeet",
+			"version": "3.11.6.402",
+			"category": "Meeting",
+			"executePath": "D:\\Program Files (x86)\\Tencent\\WeMeet\\wemeetapp.exe",
+			"uninstallPath": "",
+			"dataPath": "C:\\Users\\KiMoJar\\Documents\\TencentMeeting",
+			"configPath": "",
+			"website": "https://meeting.tencent.com/",
+			"download": "https://meeting.tencent.com/download/",
+			"manualOnline": "https://meeting.tencent.com/support/",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "wemeet",
+				"action": "start %WeMeetExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open WeMeet\necho [dir]\topen WeMeet directory\necho [dl]\topen WeMeet download site\necho [vn]\topen WeMeet version tip\necho [ws]\topen WeMeet website\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "explorer %WeMeetDataDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %WeMeetDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dl",
+						"action": "start %WeMeetDownload%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%WeMeetVersion%\",64,\"WeMeet Version\")(window.close)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %WeMeetWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"Music": [
+		{
+			"appid": null,
+			"name": "KuGou",
+			"description": "",
+			"directory": "D:\\Program Files (x86)\\KuGou\\KGMusic",
+			"version": "",
+			"category": "Music",
+			"executePath": "D:\\Program Files (x86)\\KuGou\\KGMusic\\KuGou.exe",
+			"uninstallPath": "D:\\Program Files (x86)\\KuGou\\KGMusic\\uninst.exe",
+			"dataPath": "E:\\UserTemp\\KuGou",
+			"configPath": "",
+			"website": "https://www.kugou.com/",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "kugou",
+				"action": "start %KuGouExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "goto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "explorer %KuGouDataPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %KuGouDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "uins",
+						"action": "start %KuGouUninstallPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %KuGouWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "QQMusic",
+			"description": "",
+			"directory": "D:\\Program Files (x86)\\Tencent\\QQMusic\\QQMusic1906.12.44.18",
+			"version": "1906.12.44.18",
+			"category": "Music",
+			"executePath": "D:\\Program Files (x86)\\Tencent\\QQMusic\\QQMusic1906.12.44.18\\QQMusic.exe",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "https://y.qq.com/",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "qqm",
+				"action": "start %QQMusicExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open QQMusic\necho [dir]\topen QQMusic directory\necho [vn]\topen QQMusic version tip\necho [ws]\topen QQMusic website\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %QQMusicDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%QQMusicVersion%\",64,\"QQMusic Version\")(window.close)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %QQMusicWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"Remote": [
+		{
+			"appid": null,
+			"name": "SunLogin",
+			"description": "向日葵",
+			"directory": "D:\\Program Files (x86)\\Oray\\SunLogin\\SunloginClient",
+			"version": "12.6.0.49095",
+			"category": "Remote",
+			"executePath": "D:\\Program Files (x86)\\Oray\\SunLogin\\SunloginClient\\SunloginClient.exe",
+			"uninstallPath": "D:\\Program Files (x86)\\Oray\\SunLogin\\SunloginClient\\SunloginClient.exe",
+			"dataPath": "",
+			"configPath": "",
+			"website": "https://sunlogin.oray.com/",
+			"download": "https://sunlogin.oray.com/download?categ=personal",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "sunlogin",
+				"action": "start %SunLoginExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open SunLogin\necho [dir]\topen SunLogin directory\necho [dl]\topen SunLogin download site\necho [uins]\tuninstall SunLogin\necho [vn]\topen SunLogin version tip\necho [ws]\topen SunLogin website\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %SunLoginDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dl",
+						"action": "start %SunLoginDownload%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "uins",
+						"action": "start %SunLoginUninstallPath% --mod=uninstall",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%SunLoginVersion%\",64,\"SunLogin Version\")(window.close)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %SunLoginWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"Text": [
+		{
+			"appid": null,
+			"name": "Notepad++",
+			"description": "",
+			"directory": "D:\\Program Files\\npp.8.2.portable.x64",
+			"version": "8.2",
+			"category": "Text",
+			"executePath": "D:\\Program Files\\npp.8.2.portable.x64\\notepad++.exe",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "https://notepad-plus-plus.org/",
+			"download": "",
+			"manualOnline": "https://npp-user-manual.org/",
+			"manualOffline": "https://community.notepad-plus-plus.org/",
+			"github": "https://github.com/notepad-plus-plus/notepad-plus-plus/",
+			"gitee": "",
+			"command": {
+				"cmd": "npp",
+				"action": "start %Notepad++ExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo .\necho []\tno para will open notepad++\necho [dir]\topen notepad++ directory\necho [gh]\topen notepad++ github\necho [mn]\topen notepad++ online manual\necho [vn]\topen notepad++ version tip\necho [ws]\topen notepad++ site\necho [y]\topen notepad++ yuque\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %Notepad++Directory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "gh",
+						"action": "start %Notepad++Github%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mn",
+						"action": "start %Notepad++ManualOnline%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%Notepad++Version%\",64,\"TODO\")(window.close)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %Notepad++Website%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "y",
+						"action": "start https://www.yuque.com/mongoosej/blog/notepadplus",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "Typora",
+			"description": "",
+			"directory": "D:\\Program Files\\Typora",
+			"version": "",
+			"category": "Text",
+			"executePath": "D:\\Program Files\\Typora\\Typora.exe",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "typora",
+				"action": "start /max %TyporaExecutePath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo .\necho []\tno para will open typora\necho [dir]\topen typora directory\necho [y]\topen ntypora yuque\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %TyporaDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "y",
+						"action": "start https://www.yuque.com/mongoosej/blog/typora",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "Yuque",
+			"description": "",
+			"directory": "D:\\Program Files\\Yuque\\yuque-desktop",
+			"version": "2.3.8",
+			"category": "Text",
+			"executePath": "D:\\Program Files\\Yuque\\yuque-desktop\\语雀.exe",
+			"uninstallPath": "D:\\Program Files\\Yuque\\yuque-desktop\\Uninstall 语雀.exe",
+			"dataPath": "",
+			"configPath": "",
+			"website": "https://www.yuque.com/yuque",
+			"download": "https://www.yuque.com/download",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "y",
+				"action": "start D\":\\Program Files\\Yuque\\yuque-desktop\\语雀.exe\"",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open Yuque\necho [dir]\topen Yuque directory\necho [dl]\topen Yuque download site\necho [vn]\topen Yuque version tip\necho [ws]\topen Yuque website\necho [blog]\topen Yuque mongoosej blog\necho [jvs]\topen Yuque mongoosej jarvis\necho [note]\topen Yuque mongoosej note\necho [ksec]\topen Yuque mongoosej ksec\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "blog",
+						"action": "start https://www.yuque.com/mongoosej/blog",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %YuqueDirectory%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dl",
+						"action": "start %YuqueDownload%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "exe",
+						"action": "start %YuqueExecutePath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "j",
+						"action": "start https://www.yuque.com/mongoosej/note/shuttle",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "jvs",
+						"action": "start https://www.yuque.com/mongoosej/jarvis",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ksec",
+						"action": "start https://ksec-twcs.yuque.com/ksec.twcs.cd",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "note",
+						"action": "start https://www.yuque.com/mongoosej/note",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "uins",
+						"action": "start %YuqueUninstallPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "vn",
+						"action": "start mshta vbscript:msgbox(\"%YuqueVersion%\",64,\"Yuque Version\")(window.close)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %YuqueWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"VirtualMachine": [
+		{
+			"appid": null,
+			"name": "Multipass",
+			"description": "Multipass 是一个轻量虚拟机管理器，是由 Ubuntu 运营公司 Canonical 所推出的开源项目。运行环境支持 Linux、Windows、macOS。在不同的操作系统上，使用的是不同的虚拟化技术。在 Linux 上使用的是 KVM、Window 上使用 Hyper-V、macOS 中使用 HyperKit 以最小开销运行VM，支持在笔记本模拟小型云。",
+			"directory": "",
+			"version": "",
+			"category": "VirtualMachine",
+			"executePath": "",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "https://multipass.run/",
+			"download": "https://multipass.run/install",
+			"manualOnline": "https://multipass.run/docs",
+			"manualOffline": "",
+			"github": "https://github.com/canonical/multipass",
+			"gitee": "",
+			"command": {
+				"cmd": "multipass",
+				"action": "start",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo .\necho []\tno para will open Multipass site\necho [dl]\topen Multipass download site\necho [gh]\topen Multipass GitHub site\necho [mn]\topen Multipass manual site\necho [ws]\topen Multipass site\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dl",
+						"action": "start %MultipassDownload%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "gh",
+						"action": "start %MultipassGithub%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "mn",
+						"action": "start %MultipassManualOnline%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "ws",
+						"action": "start %MultipassWebsite%",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	],
+	"Windows": [
+		{
+			"appid": null,
+			"name": "Net",
+			"description": "",
+			"directory": "",
+			"version": "",
+			"category": "Windows",
+			"executePath": "",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "net",
+				"action": "start ncpa.cpl",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo.\necho []\tno para will open Network Control Panel Application. Control Panel extension\necho [dhcp][card]\tset NetworkCard to DHCP, [card]:lan\\wlan, this require admin authorication\necho [cd]\tset EthernetNetworkCard to Chengdu specifiy, this require EthernetNetworkCard is rename to LAN and admin authorication\necho [profile]['wifiName']\texpo\trt specific WiFi profile to desktop and open it \necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "cd",
+						"action": "netsh interface ipv4 set address name=\"LAN\" static 172.17.215.24 255.255.255.0 172.17.215.1\nnetsh interface ipv4 set dns name=\"LAN\" static 61.139.2.69 primary",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dhcp",
+						"action": "if \"%PARA2%\"==\"\" (\necho [net][dhcp] must have para: lan\\wlan\necho.\ngoto Begin\n)\nif \"%PARA2%\"==\"lan\" (\nnetsh interface ipv4 set address name=\"LAN\" dhcp\nnetsh interface ipv4 set dns name=\"LAN\" dhcp\n)\nif \"%PARA2%\"==\"wlan\" (\nnetsh interface ipv4 set address name=\"WLAN\" dhcp\nnetsh interface ipv4 set dns name=\"WLAN\" dhcp\n)",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "liuliang",
+						"action": "echo ICCID: 8986112027303303836\nstart http://wx.rysms.cn/#/sys-zycard",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "profile",
+						"action": "netsh wlan export profile name=\"%PARA2%\" folder=%userprofile%\\desktop key=clear\nif exist %userprofile%\\desktop\\WLAN-%PARA2%.xml start %userprofile%\\desktop\\WLAN-%PARA2%.xml",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "Todo",
+			"description": "",
+			"directory": "",
+			"version": "",
+			"category": "Windows",
+			"executePath": "",
+			"uninstallPath": "",
+			"dataPath": "",
+			"configPath": "",
+			"website": "",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "todo",
+				"action": "start mshta vbscript:msgbox(\"Base设计开发、弘润石化一轨多车双工位串联、北京沃森、广东中烟LED、南京烟厂视频盘点、重庆太极wms/电控/电子标签接口、当升科技二期\",64,\"TODO\")(window.close)",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo .\necho []\tno para will open todo tip\necho [dir]\topen todo directory\necho.\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer F:\\ZC\\TODO",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		},
+		{
+			"appid": null,
+			"name": "WinFocus",
+			"description": "",
+			"directory": "",
+			"version": "",
+			"category": "Windows",
+			"executePath": "",
+			"uninstallPath": "",
+			"dataPath": "F:\\PVM\\Picture\\win10",
+			"configPath": "",
+			"website": "",
+			"download": "",
+			"manualOnline": "",
+			"manualOffline": "",
+			"github": "",
+			"gitee": "",
+			"command": {
+				"cmd": "jpg",
+				"action": "rem create my own picture directory\nmkdir %USERPROFILE%\\Desktop\\TodayFocus\ncopy /y %WinPicturePath% %USERPROFILE%\\Desktop\\TodayFocus\nrem locate to my picture directory\n%USERPROFILE:~0,2%\ncd %USERPROFILE%\\Desktop\\TodayFocus\nrem rename the file as a jpg file\nren * *.jpg\nexplorer %USERPROFILE%\\Desktop\\TodayFocus\nexplorer %WinFocusDataPath%",
+				"childCmds": [
+					{
+						"cmd": "?",
+						"action": "echo []\tno para will copy Windows focus pictures to desktop & rename & open them\necho [dir]\topen Windows pictures directory\necho [data]\topen my pictures directory win10\ngoto Begin",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "data",
+						"action": "explorer %WinFocusDataPath%",
+						"childCmds": [ ]
+					},
+					{
+						"cmd": "dir",
+						"action": "explorer %USERPROFILE%\\AppData\\Local\\Packages\\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\\LocalState\\Assets",
+						"childCmds": [ ]
+					}
+				]
+			},
+			"readmePath": null,
+			"iconPath": null
+		}
+	]
+}

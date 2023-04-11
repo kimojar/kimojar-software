@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.kimojar.ironman</groupId>
+		<artifactId>kimojar-ironman-mark</artifactId>
+		<version>22.12.09</version>
+	</parent>
+	<artifactId>kimojar-ironman-mark-wapp</artifactId>
+	<version>22.12.15</version>
+	<name>com.kimojar.ironman.mark.wapp</name>
+	<description>Windows应用程序管理助手：cmd快捷指令管理、app相关信息管理</description>
+
+	<url>https://yuque.com/mongoosej</url>
+	<organization>
+		<name>MongooseJ</name>
+		<url>https://yuque.com/mongoosej</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>KiMoJar</id>
+			<name>KiMoJar</name>
+			<email>mongoosej@foxmail.com</email>
+		</developer>
+	</developers>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.formdev</groupId>
+			<artifactId>flatlaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.formdev</groupId>
+			<artifactId>flatlaf-extras</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.formdev</groupId>
+			<artifactId>flatlaf-intellij-themes</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.formdev</groupId>
+			<artifactId>flatlaf-extras</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.kimojar.ironman</groupId>
+			<artifactId>kimojar-ironman-jarvis-vision</artifactId>
+			<version>22.12.09</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.kimojar</groupId>
+		<artifactId>kimojar-ironman</artifactId>
+		<version>22.12.09</version>
+	</parent>
+	<groupId>com.kimojar.ironman</groupId>
+	<artifactId>kimojar-ironman-jarvis</artifactId>
+	<name>com.kimojar.ironman.jarvis</name>
+	<description>Hi, Jarvis!</description>
+
+	<url>https://yuque.com/mongoosej</url>
+	<organization>
+		<name>MongooseJ</name>
+		<url>https://yuque.com/mongoosej</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>KiMoJar</id>
+			<name>KiMoJar</name>
+			<email>mongoosej@foxmail.com</email>
+		</developer>
+	</developers>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.kimojar.util</groupId>
+			<artifactId>kimojar-util-classloader</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.kimojar.util</groupId>
+			<artifactId>kimojar-util-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>com.kimojar.ironman.jarvis.JarvisApp</mainClass>
+						</manifest>
+						<manifestEntries>
+							<Class-Path>. lib/kimojar-util-classloader-17.03.10.jar</Class-Path>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

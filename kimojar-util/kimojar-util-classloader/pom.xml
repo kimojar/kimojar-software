@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.kimojar</groupId>
+		<artifactId>kimojar-util</artifactId>
+		<version>22.11.15</version>
+	</parent>
+	<groupId>com.kimojar.util</groupId>
+	<artifactId>kimojar-util-classloader</artifactId>
+	<version>17.03.10</version>
+	<name>com.kimojar.util.classloader</name>
+	<description>类加载模块</description>
+
+	<url>https://yuque.com/mongoosej</url>
+	<organization>
+		<name>MongooseJ</name>
+		<url>https://yuque.com/mongoosej</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>KiMoJar</id>
+			<name>KiMoJar</name>
+			<email>mongoosej@foxmail.com</email>
+		</developer>
+	</developers>
+</project>
