@@ -1,0 +1,326 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.kimojar</groupId>
+	<artifactId>kimojar-software</artifactId>
+	<version>22.11.15</version>
+	<packaging>pom</packaging>
+	<name>com.kimojar.bom</name>
+	<description>KiMoJar software's bill of materal.</description>
+
+	<url>https://yuque.com/mongoosej</url>
+	<organization>
+		<name>MongooseJ</name>
+		<url>https://yuque.com/mongoosej</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>KiMoJar</id>
+			<name>KiMoJar</name>
+			<email>mongoosej@foxmail.com</email>
+		</developer>
+	</developers>
+
+	<modules>
+		<module>kimojar-util</module>
+		<module>kimojar-tool</module>
+		<module>kimojar-ironman</module>
+	</modules>
+
+	<properties>
+		<kimojar.util.classloader.version>17.03.10</kimojar.util.classloader.version>
+		<kimojar.util.community.version>22.12.02</kimojar.util.community.version>
+		<kimojar.util.common.version>22.05.25</kimojar.util.common.version>
+		<java.version>1.8</java.version>
+		<maven.plugin.version>3.8.1</maven.plugin.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<lombok.version>1.18.22</lombok.version>
+		<junit.version>4.13.2</junit.version>
+		<slf4j.version>2.0.0</slf4j.version>
+		<logback.version>1.3.0</logback.version>
+		<dom4j.version>2.1.3</dom4j.version>
+		<commons-codec.version>1.15</commons-codec.version>
+		<commons-lang3.version>3.12.0</commons-lang3.version>
+		<h2.version>2.1.214</h2.version>
+		<mybatis.version>3.5.10</mybatis.version>
+		<metadata-extractor.version>2.18.0</metadata-extractor.version>
+		<netty.version>4.1.42.Final</netty.version>
+		<flatlaf.version>2.6</flatlaf.version>
+		<miglayout.version>3.7.4</miglayout.version>
+		<jna.version>5.12.1</jna.version>
+		<jackson.version>2.14.0</jackson.version>
+		<jaxen.version>1.1.6</jaxen.version>
+		<ormlite.version>4.48</ormlite.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.kimojar.util</groupId>
+				<artifactId>kimojar-util-classloader</artifactId>
+				<version>${kimojar.util.classloader.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.kimojar.util</groupId>
+				<artifactId>kimojar-util-community</artifactId>
+				<version>${kimojar.util.community.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.kimojar.util</groupId>
+				<artifactId>kimojar-util-common</artifactId>
+				<version>${kimojar.util.common.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/junit/junit -->
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.slf4j/log4j-over-slf4j -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>log4j-over-slf4j</artifactId>
+				<version>${slf4j.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.dom4j/dom4j -->
+			<dependency>
+				<groupId>org.dom4j</groupId>
+				<artifactId>dom4j</artifactId>
+				<version>${dom4j.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>${commons-lang3.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/commons-codec/commons-codec -->
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>${commons-codec.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+			<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>${h2.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+			<dependency>
+				<groupId>org.mybatis</groupId>
+				<artifactId>mybatis</artifactId>
+				<version>${mybatis.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.drewnoakes/metadata-extractor -->
+			<dependency>
+				<groupId>com.drewnoakes</groupId>
+				<artifactId>metadata-extractor</artifactId>
+				<version>${metadata-extractor.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-all</artifactId>
+				<version>${netty.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.formdev/flatlaf -->
+			<dependency>
+				<groupId>com.formdev</groupId>
+				<artifactId>flatlaf</artifactId>
+				<version>${flatlaf.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-extras -->
+			<dependency>
+				<groupId>com.formdev</groupId>
+				<artifactId>flatlaf-extras</artifactId>
+				<version>${flatlaf.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-intellij-themes -->
+			<dependency>
+				<groupId>com.formdev</groupId>
+				<artifactId>flatlaf-intellij-themes</artifactId>
+				<version>${flatlaf.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-jide-oss -->
+			<dependency>
+				<groupId>com.formdev</groupId>
+				<artifactId>flatlaf-jide-oss</artifactId>
+				<version>${flatlaf.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.formdev/flatlaf-swingx -->
+			<dependency>
+				<groupId>com.formdev</groupId>
+				<artifactId>flatlaf-swingx</artifactId>
+				<version>${flatlaf.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.miglayout/miglayout -->
+			<dependency>
+				<groupId>com.miglayout</groupId>
+				<artifactId>miglayout</artifactId>
+				<version>${miglayout.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/net.java.dev.jna/jna -->
+			<dependency>
+				<groupId>net.java.dev.jna</groupId>
+				<artifactId>jna</artifactId>
+				<version>${jna.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/net.java.dev.jna/jna-platform -->
+			<dependency>
+				<groupId>net.java.dev.jna</groupId>
+				<artifactId>jna-platform</artifactId>
+				<version>${jna.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+			<dependency>
+				<groupId>com.fasterxml.jackson.core</groupId>
+				<artifactId>jackson-databind</artifactId>
+				<version>${jackson.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/jaxen/jaxen -->
+			<dependency>
+				<groupId>jaxen</groupId>
+				<artifactId>jaxen</artifactId>
+				<version>${jaxen.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.j256.ormlite/ormlite-core -->
+			<dependency>
+				<groupId>com.j256.ormlite</groupId>
+				<artifactId>ormlite-jdbc</artifactId>
+				<version>${ormlite.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${project.artifactId}-${project.version}-${beta}</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.xml</include>
+					<include>**/*.properties</include>
+					<include>**/*.yml</include>
+					<include>**/*.json</include>
+					<include>**/*.txt</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>src/main/resources/META-INF</directory>
+				<includes>
+					<include>**/*.*</include>
+				</includes>
+				<targetPath>META-INF</targetPath>
+			</resource>
+		</resources>
+		<pluginManagement>
+			<plugins>
+				<!-- maven编译插件 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.1</version>
+				</plugin>
+				<!-- maven打包jar插件 -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<version>3.2.0</version>
+				</plugin>
+				<!-- 时间戳配置插件 -->
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>build-helper-maven-plugin</artifactId>
+					<version>3.2.0</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifestEntries>
+							<Developer-Name>KiMoJar</Developer-Name>
+							<Developer-Email>mongoosej@foxmail.com</Developer-Email>
+							<Developer-Yuque>https://yuque.com/mongoosej</Developer-Yuque>
+							<Developer-GitHub>https://github.com/mongoosejar</Developer-GitHub>
+							<Software-License>https://www.apache.org/licenses/LICENSE-2.0</Software-License>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>timestamp-property</id>
+						<goals>
+							<goal>timestamp-property</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<name>beta</name>
+					<pattern>yyMMddHHmm</pattern>
+					<!-- 
+					<name>current.time</name>
+					<pattern>yyyyMMddHHmm</pattern>-->
+					<timeZone>GMT+8</timeZone>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
