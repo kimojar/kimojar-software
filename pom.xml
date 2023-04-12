@@ -14,8 +14,8 @@
 	</organization>
 	<licenses>
 		<license>
-			<name>Apache License, Version 2.0</name>
-			<url>https://www.apache.org/licenses/LICENSE-2.0</url>
+			<name>Eclipse Public License 2.0</name>
+			<url>https://www.eclipse.org/legal/epl-2.0/</url>
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
@@ -295,8 +295,8 @@
 							<Developer-Name>KiMoJar</Developer-Name>
 							<Developer-Email>mongoosej@foxmail.com</Developer-Email>
 							<Developer-Yuque>https://yuque.com/mongoosej</Developer-Yuque>
-							<Developer-GitHub>https://github.com/mongoosejar</Developer-GitHub>
-							<Software-License>https://www.apache.org/licenses/LICENSE-2.0</Software-License>
+							<Developer-GitHub>https://github.com/kimojar/kimojar-software</Developer-GitHub>
+							<Software-License>https://www.eclipse.org/legal/epl-2.0/</Software-License>
 						</manifestEntries>
 					</archive>
 				</configuration>
