@@ -42,7 +42,6 @@
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>kimojar-ironman-mark-wapp</module>
 		<module>kimojar-ironman-mark-wss</module>
 		<module>kimojar-ironman-mark-wsc</module>
 		<module>kimojar-ironman-mark-wcs3</module>
