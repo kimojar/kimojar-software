@@ -29,7 +29,6 @@
 
 	<modules>
 		<module>kimojar-util</module>
-		<module>kimojar-tool</module>
 		<module>kimojar-ironman</module>
 	</modules>
 
